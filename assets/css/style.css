@@ -1,0 +1,37 @@
+.container-fluid{
+    padding :0px;
+}
+/* Bootstrap bug, row and col not showing up, height and width of 0px without this edit? */
+.row,.col-8,.col-4{
+    width:100%;
+    height:100%;
+}
+
+#title{
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background: black;
+    width:100%;
+    color:white;
+}
+#button-div{
+    padding:5px;
+    float:left;
+    width:100%;
+}
+.buttons{
+    margin: 5px;
+}
+#gifs{
+
+}
+#userInput{
+
+}
+#actualInput{
+    width:80%;
+}
+#submitButton{
+    margin-top:10px;
+}
