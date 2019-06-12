@@ -1,7 +1,7 @@
 .container-fluid{
     padding :0px;
 }
-/* Bootstrap bug, row and col not showing up, height and width of 0px without this edit? */
+/* Bootstrap bug? Row and col not showing up, height and width of 0px without this edit? */
 .row,.col-8,.col-4{
     width:100%;
     height:100%;
