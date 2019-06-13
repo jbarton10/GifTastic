@@ -35,15 +35,19 @@ $(".buttons").on("click", function(){
             //Loop to make gifs
             for (var i = 0; i < 10; i++){
                 var newGif= $("<img>");
+                var gifDiv=$("<div>"); 
+                var rating = $("<p>").text("Rating: " + response.data[i].rating);
                 //Should make it still for each
-                console.log(response.data[i].images.fixed_height_small_still.url);
+
                 newGif.attr("src", response.data[i].images.fixed_height_small_still.url);
                 //Still image for gif
                 newGif.attr("data-still", response.data[i].images.fixed_height_small_still.url);
                 newGif.attr("data-animated", response.data[i].images.fixed_height_small.url);
                 newGif.attr("class", "gifImage");
                 newGif.attr("data-state", "still");
-                $("#gifs").append(newGif);
+                gifDiv.append(rating);
+                gifDiv.append(newGif);
+                $("#gifs").append(gifDiv);
 
             }
             
@@ -82,17 +86,23 @@ $("#submitButton").on("click", function(){
       })
         .then(function(response) {
             
+            
             //Loop to make gifs
             for (var i = 0; i < 11; i++){
                 var newGif= $("<img>");
+                var gifDiv=$("<div>"); 
+                var rating = $("<p>").text("Rating: " + response.data[i].rating);
                 //Should make it still for each
+
                 newGif.attr("src", response.data[i].images.fixed_height_small_still.url);
                 //Still image for gif
                 newGif.attr("data-still", response.data[i].images.fixed_height_small_still.url);
                 newGif.attr("data-animated", response.data[i].images.fixed_height_small.url);
                 newGif.attr("class", "gifImage");
                 newGif.attr("data-state", "still");
-                $("#gifs").append(newGif);
+                gifDiv.append(rating);
+                gifDiv.append(newGif);
+                $("#gifs").append(gifDiv);
             }
             
         });
