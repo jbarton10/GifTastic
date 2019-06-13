@@ -24,6 +24,7 @@
     margin: 5px;
 }
 #gifs{
+    
 
 }
 #userInput{
@@ -34,4 +35,7 @@
 }
 #submitButton{
     margin-top:10px;
+}
+.gifImage{
+    margin: 10px;
 }
